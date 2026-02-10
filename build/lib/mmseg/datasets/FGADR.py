@@ -7,8 +7,8 @@ import os.path as osp
 class FGADRDataset(CustomDataset):
     # CLASSES = ["background","EX","HE","SE",]
     # PALETTE = [[0,0,0],[255,0,0],[255,255,0],[0,255,0]]
-    CLASSES = ["background", "EX","MA", "SE", "HE"]
-    PALETTE = [[0, 0, 0], [255, 0, 0],[255, 255, 0],[255, 255, 255], [0, 255, 0]]
+    CLASSES = ["background", "EX", "MA", "SE", "HE"]
+    PALETTE = [[0, 0, 0], [255, 0, 0], [255, 255, 0], [255, 255, 255], [0, 255, 0]]
 
     def __init__(self, split, **kwargs):
         super().__init__(img_suffix='.jpg', seg_map_suffix='.png',
